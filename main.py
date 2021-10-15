@@ -2,6 +2,8 @@ import random
 import threading
 import time
 
+
+
 def namegen():
     length = random.randint(7, 15) #set your min and max (min, max)
     eval = "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R",
@@ -28,6 +30,8 @@ def main():
     f1 = open("./output/email.txt", "a+")
     f1.write(f"{final_email}\n")
     f1.close
+    
+
 
 threads=[]
 
